@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Caixas</title>
+    <style>
+        h1 { /* box-level */
+
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+        /*  border-width: 10px;
+            border-style: solid;
+            border-color: darkgreen; */
+
+            border: 10px solid darkgreen;
+
+        /*  padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px; */
+
+            padding: 10px 10px 10px 10px; /* pode usar também padding: 10px, quantos todas forem iguais*/
+
+        /*  margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 40px;
+            margin-left: 10px; */
+
+            margin: 10xp 10px 40px 10px; /* assim como o padding pode ser usado margin: 10px, quando todos forem iguais.
+            Além disso caso queira centralizar pode usar margin: 10px auto 10px auto, isso significa que ele vai calcular margem a esquerda e a direita para deixar centralizado */ 
+
+        /*  outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon; */
+
+            outline: 5px dashed salmon; /* da mesma for que o paddin e margin, pode ser fetio também com outline */
+        }
+
+        a { /* inline-level */
+            border-width: 10px;
+            border-style: dashed;
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Caixa box-level</h1>
+    <p>Parágafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como isso funciona.</p>
+</body>
+</html>
