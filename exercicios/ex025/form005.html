@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Exemplos de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <!--Radiobox - Só pode ser marcado uma das opções. 
+            Para que radiobox seja desmarcado quando o outro é marcado, o 'name' deve ser igual para todos os itens, porém o 'id' deve ser diferente. Ex: name="sexo".
+            Usar o parametro 'checked' para que um item já apareça automaticamente marcado, porém nessa caso somente pode ser feito em um item.
+        -->
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" value="M"> <label for="isxmas">Masculino</label>
+            <input type="radio" name="sexo" id="isxfem" value="F" checked><label for="isxfem">Feminino</label>
+        </fieldset>
+        <!-- Checkbox - pode ser marcado mais de uma opção.
+            No caso do checkbox os 'name' e 'id' devem ser diferentes, e para um item aparecer automaticamente marcado usar também o parametro 'checked', neste caso pode ser feito em mais de um item. -->
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut" value="Futebol" checked> <label for="iesfut">Futebol </label><br>
+            <input type="checkbox" name="esbas" id="iesbas" value="Basquete"> <label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="esnat" id="iesnat" value="Natação"> <label for="iesnat">Natação</label> <br>
+            <input type="checkbox" name="esten" id="iesten" value="Tênis"> <label for="iesten">Tênis</label> <br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
